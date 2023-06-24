@@ -1,0 +1,65 @@
+:root {
+    --qr-color-bg: #d5e1ef;
+    --qr-color-white: hsl(0, 0%, 100%);
+    --qr-color-light-gray: hsl(212, 45%, 89%);
+    --qr-color-grayish-blue: hsl(220, 15%, 55%);
+    --qr-color-dark-blue: hsl(218, 44%, 22%);
+    --qr-font-size: 15px;
+    --qr-space: 15px;
+}
+
+body, main, footer {
+    display: grid;
+}
+
+h1, h2 {
+    margin-top: var(--qr-space);
+    padding: 0 var(--qr-space);
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    background-color: var(--qr-color-bg);
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--qr-font-size);
+}
+
+main {
+    justify-self: center;
+    align-self: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-self: center;
+    align-self: end;
+}
+
+.qr-card {
+    width: 320px;
+    height: 500px;
+    padding: var(--qr-space);
+    background-color: var(--qr-color-white);
+    border-radius: var(--qr-space);
+}
+
+.qr-card-image {
+    max-width: 100%;
+    border-radius: var(--qr-space);
+}
+
+.qr-card-title {
+    color: var(--qr-color-dark-blue);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.qr-card-subtitle {
+    color: var(--qr-color-grayish-blue);
+    font-size: 1em;
+    font-weight: 400;
+}
